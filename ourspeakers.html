@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Speakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .speaker-tab {
+            border: 2px solid #eb0028;
+            color: #eb0028;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .speaker-tab.active-tab,
+        .speaker-tab:hover {
+            background-color: #eb0028;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+
+    <div class="container-fluid nav-bar" style="background-color: black;">
+        <nav class="navbar navbar-expand-xl py-lg-3">
+            <a href="index.html" class="navbar-brand px-lg-3 fw-bold"><img
+                    src="images/TEDx DWPS Ludhiana Youth Logo - white.png" alt="" width="200px"></a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-white">About</a>
+                    <a href="#" class="nav-item nav-link text-white">Speakers</a>
+                    <a href="registration.html" class="nav-item nav-link text-white">Nomination</a>
+                    <a href="event.html" class="nav-item nav-link text-white">Event</a>
+                    <button class="nav-link rounded mx-lg-3" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true" style="background-color: #eb0028; padding: 0.5rem 1rem;">
+                        <a class="text-decoration-none text-white" href="index.html#contact"
+                            style="display: inline-block;">Contact Us</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="fw-bold pb-4 text-center" style="color: #eb0028;">Our Speakers</h2>
+
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <button id="btn-2026" class="btn rounded-pill px-4 py-2 fw-bold speaker-tab active-tab">2026
+                    Speakers</button>
+                <button id="btn-2025" class="btn rounded-pill px-4 py-2 fw-bold speaker-tab">2025 Speakers</button>
+            </div>
+
+            <div class="row gap-5 justify-content-center" id="speakers-2026">
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Aarohi Jain" data-img="Speakers2026/15.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/15.png" alt="Aarohi Jain" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Aarohi Jain</h4>
+                        <p class="text-white mb-0">Student - DL DAV Model School, Delhi</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Aditi Singh" data-img="Speakers2026/13.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/13.png" alt="Aditi Singh" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Aditi Singh</h4>
+                        <p class="text-white mb-0">Senior Healthcare Consultant - ICG Medical</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Ajay Rawat" data-img="Speakers2026/4.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/4.png" alt="Ajay Rawat" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Ajay Rawat</h4>
+                        <p class="text-white mb-0">Creative Director - Genpact</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Atul Khanna" data-img="Speakers2026/8.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/8.png" alt="Atul Khanna" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Atul Khanna</h4>
+                        <p class="text-white mb-0">Founder & Curator - Vivaana Heritage Hotels</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Avika Jain" data-img="Speakers2026/21.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/21.png" alt="Avika Jain" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Avika Jain</h4>
+                        <p class="text-white mb-0">Scholar - MENTORx Global School, India</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Debalina Chatterjee" data-img="Speakers2026/3.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/3.png" alt="Debalina Chatterjee" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Debalina Chatterjee</h4>
+                        <p class="text-white mb-0">Entrepreneur & Mind Training Coach</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Atul Bhhardwaj" data-img="Speakers2026/14.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/14.png" alt="Dr. Atul Bhhardwaj" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Atul Bhhardwaj</h4>
+                        <p class="text-white mb-0">Founder & Director - Global Education and Consulting</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Harleen Kaur" data-img="Speakers2026/10.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/10.png" alt="Dr. Harleen Kaur" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Harleen Kaur</h4>
+                        <p class="text-white mb-0">CEO - Healing Urja Institute of Cosmic Sciences</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Preeti Chitkara" data-img="Speakers2026/11.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/11.png" alt="Dr. Preeti Chitkara" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Preeti Chitkara</h4>
+                        <p class="text-white mb-0">Professor & Head PR - KIET, Delhi-NCR</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Shalini Mehta" data-img="Speakers2026/12.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/12.png" alt="Dr. Shalini Mehta" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Shalini Mehta</h4>
+                        <p class="text-white mb-0">Director - Sai Kiran Institute of Vedic Sciences</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Suneeta Mukherjee" data-img="Speakers2026/26.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/26.png" alt="Dr. Suneeta Mukherjee" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Suneeta Mukherjee</h4>
+                        <p class="text-white mb-0">Retired IAS and ICS Officer</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Sunita Gandhi" data-img="Speakers2026/25.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/25.png" alt="Dr. Sunita Gandhi" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Sunita Gandhi</h4>
+                        <p class="text-white mb-0">Founder - DEVI Sansthan</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gayathri Vamsi" data-img="Speakers2026/2.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/2.png" alt="Gayathri Vamsi" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gayathri Vamsi</h4>
+                        <p class="text-white mb-0">Founder & CEO - Parenting Simplified</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gurchetan Kaur" data-img="Speakers2026/18.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/18.png" alt="Gurchetan Kaur" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gurchetan Kaur</h4>
+                        <p class="text-white mb-0">Student - B.Tech Animal Biotechnology, GADVASU</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gurmukh Singh Bawa" data-img="Speakers2026/22.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/22.png" alt="Gurmukh Singh Bawa" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gurmukh Singh Bawa</h4>
+                        <p class="text-white mb-0">Former General Manager - Airports Authority of India</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gurnoor Singh Bhangoo" data-img="Speakers2026/19.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/19.png" alt="Gurnoor Singh Bhangoo" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gurnoor Singh Bhangoo</h4>
+                        <p class="text-white mb-0">Student - B.Tech Biotechnology, GADVASU</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gurpreet Singh Kapoor" data-img="Speakers2026/7.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/7.png" alt="Gurpreet Singh Kapoor" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gurpreet Singh Kapoor</h4>
+                        <p class="text-white mb-0">Founder - BrilliED Career Technologies</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Kunal Gupta" data-img="Speakers2026/5.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/5.png" alt="Kunal Gupta" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Kunal Gupta</h4>
+                        <p class="text-white mb-0">Founder & CEO - Mount Talent Consulting | Rozgar.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Mahira Juneja" data-img="Speakers2026/20.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/20.png" alt="Mahira Juneja" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Mahira Juneja</h4>
+                        <p class="text-white mb-0">Youth Prodigy | Creative Genius | Inspiring Changemaker</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Majid Misger" data-img="Speakers2026/24.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/24.png" alt="Majid Misger" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Majid Misger</h4>
+                        <p class="text-white mb-0">L&D Professional</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Maninder Singh Nayyar" data-img="Speakers2026/9.png"
+                        data-intro="Biography coming soon...">
+                        <img src="Speakers2026/9.png" alt="Maninder Singh Nayyar" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Maninder Singh Nayyar</h4>
+                        <p class="text-white mb-0">Founder & CEO - CEF Group</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Mudit Kumar" data-img="Speakers2026/16.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/16.png" alt="Mudit Kumar" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Mudit Kumar</h4>
+                        <p class="text-white mb-0">Co-Founder & Chief Operating Officer - Ideabaaz</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Renu Bohra" data-img="Speakers2026/6.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/6.png" alt="Renu Bohra" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Renu Bohra</h4>
+                        <p class="text-white mb-0">CHRO - SYSTRA India</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Shubhaa Aditya" data-img="Speakers2026/1.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/1.png" alt="Shubhaa Aditya" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Shubhaa Aditya</h4>
+                        <p class="text-white mb-0">Mindset & Manifestation Coach - Mindful Solution Studio</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Tarun Kapoor" data-img="Speakers2026/17.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/17.png" alt="Tarun Kapoor" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Tarun Kapoor</h4>
+                        <p class="text-white mb-0">Teaching Fellow - College of Animal Biotechnology, GADVASU</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Vibha Kapoor" data-img="Speakers2026/23.png" data-intro="Biography coming soon...">
+                        <img src="Speakers2026/23.png" alt="Vibha Kapoor" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Vibha Kapoor</h4>
+                        <p class="text-white mb-0">Founder - VIC</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row gap-5 justify-content-center d-none" id="speakers-2025">
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Aum Mohak Raghuvanshi" data-img="images/mohak.jpeg"
+                        data-intro="Aum Mohak Raghuvanshi is a Digital Marketing Strategist with over 5 years of corporate marketing experience. He holds a BS in Marketing and BA in Strategic Communication from The University of Scranton, Pennsylvania, and an MS in Integrated Marketing with a concentration in Digital Marketing from New York University. Aum is a member of the prestigious National Marketing Honors Society and a participant in the esteemed BRICS Young Leaders program. With diverse skills in marketing, advertising, public relations, and sales, Aum is a versatile professional with a passion for digital marketing and classical music as a trained vocalist.">
+                        <img src="images/mohak.jpeg" alt="Aum Mohak Raghuvanshi" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Aum Mohak Raghuvanshi</h4>
+                        <p class="text-white mb-0">Digital Marketing Strategist</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Avirat Jain" data-img="images/avirat.jpeg"
+                        data-intro="Avirat Jain, the Youngest CEO at Harvard alumnus, is a dynamic innovator and visionary leader known for his groundbreaking contributions to technology and business. With a passion for coding, robotics, and astronautical science, he has developed cutting-edge solutions like ultrasonic sensor spectacles for the visually impaired and custom-designed drones. Avirat is a multi-award-winning youth icon, keynote speaker, published author, and holder of multiple world records. His relentless curiosity, entrepreneurial drive, and commitment to social impact position him as a trailblazer shaping the future of technology and leadership.">
+                        <img src="images/avirat.jpeg" alt="Avirat Jain" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Avirat Jain</h4>
+                        <p class="text-white mb-0">Youngest CEO - Harvard Alumnus</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Bhavdeep Kohli" data-img="images/bhavdeep.jpeg"
+                        data-intro="Bhavdeep Kohli is a multifaceted expert as an educationist, image consultant and a soft skills trainer. With international certifications and over 200 trainings conducted, she empowers individuals and organizations through image building, corporate communication, and leadership development. As the founder of Kohli Star Image School and Kohli Finishing School, Bhavdeep's mission is to build confidence and inspire success through effective communication and transformational leadership, shaping future leaders and individuals with a strong professional presence.">
+                        <img src="images/bhavdeep.jpeg" alt="Bhavdeep Kohli" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Bhavdeep Kohli</h4>
+                        <p class="text-white mb-0">Director - Kohli Star Image School</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Neelima Bhardwaj" data-img="images/neelima.jpeg"
+                        data-intro="Dr. Neelima Bhardwaj is a professional specializing in personal development, holistic wellness, and coaching. Being a certified NLP master practitioner, hypnosis trainer, and Reiki Grand Master, she empowers professionals to overcome mental and emotional barriers. Dr. Bhardwaj is also an accomplished author, podcast host, and social media influencer, sharing expertise on mental health, self-doubt, and emotional resilience. She has received national accolades for her contributions to women's empowerment and continues to inspire a broader audience through her work.">
+                        <img src="images/neelima.jpeg" alt="Dr. Neelima Bhardwaj" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Neelima Bhardwaj</h4>
+                        <p class="text-white mb-0">Mindset Mentor - NB Glassminds</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Piyali Chatterjee" data-img="images/piyali.jpeg"
+                        data-intro="Dr. Piyali Chatterjee is a pioneering entrepreneur and expert in pet health, hygiene, and grooming with over a decade of experience. As the Founder & CEO of Glampetz Pet Salon and Spa, she has revolutionized the Indian pet grooming industry through innovative practices and a commitment to comprehensive pet care. With seven locations across major cities, Dr. Chatterjee has introduced pioneering services like herbal treatments and single-session skin cures, while promoting sustainable pet care practices. Her work has earned numerous awards and recognition for outstanding contributions to pet care and humanitarian efforts.">
+                        <img src="images/piyali.jpeg" alt="Dr. Piyali Chatterjee" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Piyali Chatterjee</h4>
+                        <p class="text-white mb-0">Founder & CEO - Glampetz</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Samiksha Borele" data-img="images/samiksha.jpeg"
+                        data-intro="Samiksha Borele, a visionary entrepreneur, leads SB Hospitality with a mission to redefine the hospitality landscape of Central India. As the force behind the acclaimed Hotel Chain she has built a brand known for its warmth, service, and strategic excellence. Now charting bold new territory, Samiksha is spearheading the development of a luxury 5-star hotel and state-of-the-art banquet facilities—set to transform the region’s hospitality experience. Her life reflects a journey of passion, perseverance, and purpose—creating spaces where comfort meets innovation, and every guest encounter becomes a lasting memory.">
+                        <img src="images/samiksha.jpeg" alt="Dr. Samiksha Borele" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Samiksha Borele</h4>
+                        <p class="text-white mb-0">President - Borele World</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Varsha Jain" data-img="images/varsha.jpeg"
+                        data-intro="Dr. Varsha Jain is a renowned international jewelry designer and founder of Meavika Jewelz, celebrated for her exquisite, one-of-a-kind designs that blend modern and vintage elements. With over 30 years of experience, she has garnered numerous prestigious awards, including The Midas Touch Award 2021 and International Designer of the Year 2021. Dr. Jain is recognized for her expertise in jewelry design, entrepreneurship, and mentorship, and is admired for her passionate, creative, and empowering approach to her craft.">
+                        <img src="images/varsha.jpeg" alt="Dr. Varsha Jain" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Varsha Jain</h4>
+                        <p class="text-white mb-0">Founder & CEO - Meavika Jewelz</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Dr. Venus Bansal" data-img="images/venus.jpeg"
+                        data-intro="Dr. Venus Bansal is a highly qualified and experienced obstetrician and gynaecologist, currently serving as Senior Consultant at Clio Mother and Child Institute. With expertise in laparoscopic surgery and fetal medicine from AIIMS, New Delhi, she has managed over 6,000 high-risk pregnancies, 3,000 laparoscopic surgeries, and 500 obstetric critical care cases. Dr. Bansal is a prolific contributor to her field, having written chapters on various gynaecological topics, organized workshops, and presented over 200 times at national and international forums.">
+                        <img src="images/venus.jpeg" alt="Dr. Venus Bansal" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Dr. Venus Bansal</h4>
+                        <p class="text-white mb-0">Sr. Consultant Obstetrics & Gynaecology CLIO Mother & Child Institute
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Gaurav Arora" data-img="images/gaurav.jpeg"
+                        data-intro="Gaurav Arora is a technology leader and hands-on technologist with 27+ years of experience driving technical innovation. A prolific author of over 100 books, and holder of multiple certifications (Azure, MuleSoft, IBM), Gaurav has delivered solutions for enterprises and start-ups across diverse domains, including medical, finance, and gaming. He excels in solution architecture, project management, AI, and integration spaces, with expertise in technologies like Mule, Java, Microsoft, and AWS. Gaurav's strengths include technical strategy, governance, people leadership, design thinking, and workshop facilitation, making him a versatile leader in the tech industry.">
+                        <img src="images/gaurav.jpeg" alt="Gaurav Arora" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Gaurav Arora</h4>
+                        <p class="text-white mb-0">Sr. Enterprise Architect - IBM</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Ghanshyam Kumar" data-img="images/ghanshyam.jpeg"
+                        data-intro="Ghashyam Kumar, is a visionary event designer with over a decade of experience in crafting emotionally resonant experiences for luxury weddings and brand activations. As the founder of Partyideaaz Events, he reimagines celebrations as cultural storytelling. Through his podcast, The Event Detective, and social media platforms, Ghashyam mentors the next generation of planners, sharing industry insights and expertise to elevate events into meaningful journeys that connect hearts, honor heritage, and leave a lasting legacy.">
+                        <img src="images/ghanshyam.jpeg" alt="Ghanshyam Kumar" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Ghanshyam Kumar</h4>
+                        <p class="text-white mb-0">Director & Founder - Partyideaaz</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Harkanwar Singh" data-img="images/harkanwar.jpeg"
+                        data-intro="Harkanwar Singh is the Founder & CEO of Homekrafted, a platform empowering home chefs, farmers, and artisans globally. With 11+ years of experience in media, branding, and e-commerce, he has worked with global brands and crafted impactful narratives. Harkanwar is leading initiatives for street children rehabilitation, mental health, and a Drug-Free Punjab. He is launching the Homekrafted app to connect local creators with global consumers, driven by his passion for perseverance and empowering local talent.">
+                        <img src="images/harkanwar.jpeg" alt="Harkanwar Singh" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Harkanwar Singh</h4>
+                        <p class="text-white mb-0">Founder & CEO - Homekrafted</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Maithreye Murali" data-img="images/murali.jpeg"
+                        data-intro="Maithreye Murali is a visionary leader and entrepreneur, and founder of a pioneering brand offering orally dissolving mouth supplements. With a background in driving growth at companies, Maithreye combines strategic brilliance with quiet generosity. A devoted philanthropist, she empowers communities and individuals without seeking recognition. As classical dancer, and art enthusiast, Maithreye embodies a unique blend of creativity and leadership, inspiring positive change and shaping the next generation with care and vision.">
+                        <img src="images/murali.jpeg" alt="Maithreye Murali" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Maithreye Murali</h4>
+                        <p class="text-white mb-0">Founder & CEO - Miracle Me</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Parv Jindal" data-img="images/parv.jpeg"
+                        data-intro="Parv Jindal, an 11-year-old prodigy from Cambridge International School, Ludhiana, is a nationally recognized AI and robotics developer, keynote speaker, and record holder. With accolades such as the Scholar's Book of World Records and National Book of Records, Parv has delivered impactful talks at premier institutions, developed real-world AI solutions like smart irrigation and traffic bots, and actively contributed to social causes through volunteering. His passion for technology, sustainability, and space exploration, combined with his innovative mindset and inspirational speaking, marks him as a young changemaker shaping the future with empathy and brilliance.">
+                        <img src="images/parv.jpeg" alt="Parv Jindal" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Parv Jindal</h4>
+                        <p class="text-white mb-0">Student - BCM Arya Cambridge International School, Ludhiana</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Sahil Makkar" data-img="images/sahil.jpeg"
+                        data-intro="Sahil Makkar is a seasoned entrepreneur, investor, and innovation expert. A fellow Chartered Accountant and alumnus of ISB and IIM Bangalore, Sahil is a nationally recognized thought leader, strategic advisor, and author of two books on startup funding and finance. With 13+ years of experience, he assists startups and corporates in raising capital, mergers, and acquisitions, and scaling businesses. Sahil is passionate about frugal innovations, bridging the digital divide, and empowering underprivileged communities through exponential technologies and community activation.">
+                        <img src="images/sahil.jpeg" alt="Sahil Makkar" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Sahil Makkar</h4>
+                        <p class="text-white mb-0">Managing Director - Punjab Angels Network</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Sanya Duggal" data-img="images/sanya.jpeg"
+                        data-intro="Sanya Duggal is a seasoned marketing and strategy professional, currently serving as the Partner Go-to-Market and Strategy Lead for Microsoft’s SMB Azure segment across India and South Asia. She specializes in scaling cloud adoption, generative AI solutions, and driving business growth through strategic partnerships. Beyond her corporate role, Sanya is a prolific public speaker, startup mentor, and community contributor, passionately empowering young talent and advocating for education and innovation.">
+                        <img src="images/sanya.jpeg" alt="Sanya Duggal" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Sanya Duggal</h4>
+                        <p class="text-white mb-0">Partner Go-To-Market & Strategy Manager - Microsoft</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Sayali Bhagat" data-img="images/sayali.jpeg"
+                        data-intro="Sayali Bhagat is a versatile Indian actress, former model. She won the Femina Miss India World title in 2004 and went on to pursue a successful acting career in Bollywood and regional films. Apart from her film work, Sayali is known for her social activism, and has collaborated with various organizations. With a background in management studies, she has also ventured into entrepreneurship as the Co-Founder of Altawon Media House.">
+                        <img src="images/sayali.jpeg" alt="Sayali Bhagat" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Sayali Bhagat</h4>
+                        <p class="text-white mb-0">CoFounder - Altawan Media House, Former Miss India - Actor</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 col-md-6">
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#speakerModal"
+                        data-name="Tiyana Borele" data-img="images/tiyana.jpeg"
+                        data-intro="Tiyana Borele, a radiant 6-year-old from Nagpur, is one of India’s youngest TEDx speakers and a joyful ambassador for childhood wellness. Known for her emotional intelligence, storytelling, and infectious positivity, she advocates for happiness as a superpower in children and urges schools to foster joy, imagination, and emotional expression. With accolades like the Little Luminary Award and Global Child Voice Award, Tiyana inspires audiences through her talks, performances, and heartfelt messages that remind us to embrace the wisdom of young hearts and the power of playful learning.">
+                        <img src="images/tiyana.jpeg" alt="Tiyana Borele" class="bw-to-color">
+                    </div>
+                    <div class="team-content text-center py-3 rounded-bottom">
+                        <h4>Tiyana Borele</h4>
+                        <p class="text-white mb-0">Student - Vibgyor World Academy, Nagpur</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="speakerModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" class="img-fluid mb-3" style="max-height: 250px;" alt="Speaker Image">
+                    <p id="modalIntro" class="px-3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light">
+                        <a href="#" class="fw-bold">
+                            <i class="fas fa-copyright text-light me-2"> 2025</i>
+                            TEDxDWPS Ludhiana Youth
+                        </a>
+                        , All rights reserved.
+                    </span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    Designed By
+                    <a class="border-bottom fw-bold" href="https://www.linkedin.com/in/himanijangid07/">
+                        Himani Jangid
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn2026 = document.getElementById('btn-2026');
+            const btn2025 = document.getElementById('btn-2025');
+            const speakers2026 = document.getElementById('speakers-2026');
+            const speakers2025 = document.getElementById('speakers-2025');
+
+            btn2026.addEventListener('click', function () {
+                // Button Styling
+                btn2026.classList.add('active-tab');
+                btn2025.classList.remove('active-tab');
+                // Visibility Toggle
+                speakers2026.classList.remove('d-none');
+                speakers2025.classList.add('d-none');
+            });
+
+            btn2025.addEventListener('click', function () {
+                // Button Styling
+                btn2025.classList.add('active-tab');
+                btn2026.classList.remove('active-tab');
+                // Visibility Toggle
+                speakers2025.classList.remove('d-none');
+                speakers2026.classList.add('d-none');
+            });
+        });
+    </script>
+</body>
+
+</html>
